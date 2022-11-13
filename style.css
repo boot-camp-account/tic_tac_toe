@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --orange: #f87f00 ;
+    --border_color: #00e0ff;
+    --font: "Bungee Spice";
+}
+
+html {
+    background: url(https://www.wallpapertip.com/wmimgs/197-1971167_gaming-neon-wallpaper-widescreen-top-wallpaper-widescreen-slot.png);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body {
+    color: var(--orange);
+    font-family: var(--font);
+}
+
+#entireContainer {
+    padding: 10px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#playerInformationContainer {
+    padding: 15px;
+    width: 450px;
+    background-color: rgba(23, 92, 176, 0.8);
+    border-radius: 10px;
+    border: 3px solid var(--border_color);
+    text-align: center;
+}
+
+h1 {
+    font-size: 60px;
+    user-select: none;
+}
+
+#playerInstructions {
+    user-select: none;
+}
+
+#submit {
+    padding: 5px;
+    background-color: lightgray;
+    border-color: var(--orange);
+    border-radius: 6px;
+    font-size: 12px;
+    font-family: var(--font);
+}
+
+#submit:hover {
+    box-shadow: 0 0 0 4px black;
+    background-color: var(--border_color);
+}
+
+h2 {
+    font-size: 16px;
+}
+
+.player-names {
+    display: none;
+}
+
+#gameContainer {
+    margin-top: 25px;
+    text-align: center;
+    width: 450px;
+    background-color: rgba(23, 92, 176, 0.8);
+    border-radius: 10px;
+    border: 3px solid var(--border_color);
+}
+
+#cellContainer {
+    padding-top: 20px;
+}
+
+button {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: lightgray;
+    border-color: var(--orange);
+    font-size: 20px;
+    font-family: var(--font);
+}
+
+button:hover {
+    box-shadow: 0 0 0 4px black;
+    background-color: var(--border_color);
+}
+
+#cellContainer {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 225px;
+    margin: auto;
+}
+
+.cell {
+    width: 90px;
+    height: 90px;
+    border: 2px solid var(--orange);
+    box-shadow: 0 0 0 2px;
+    line-height: 75px;
+    font-size: 80px;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 5px;
+}
+
+#statusText {
+    font-size: 30px;
+    margin-top: 20px;
+    user-select: none;
+}
+
+li {
+    list-style: none;
+}
+
+.hidden {
+    display: none;
+}
